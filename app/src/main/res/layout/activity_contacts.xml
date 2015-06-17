@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MyContactsActivity">
+
+
+    <Button
+        android:id="@+id/btnReadContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="@string/btn_lbl_readContacts"/>
+
+    <TextView
+        android:id="@+id/txtContactsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnReadContacts"
+        android:layout_alignRight="@+id/btnReadContacts"
+        android:layout_below="@+id/btnReadContacts"
+        android:gravity="center" />
+<!--        android:text="@string/txt_lbl_contactsData" />
+    -->
+    <TextView
+        android:id="@+id/txtContactsData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtContactsCount"
+        android:layout_alignRight="@+id/txtContactsCount"
+        android:layout_below="@+id/txtContactsCount"
+        android:gravity="center"
+        android:text="@string/txt_lbl_contactsData" />
+<!--
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtContactsData"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+-->
+</RelativeLayout>
