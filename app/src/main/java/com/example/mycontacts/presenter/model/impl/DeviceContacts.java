@@ -15,8 +15,8 @@ public class DeviceContacts implements IDeviceContacts {
     public Bundle retrieveContacts(Context context) {
 
         Bundle result = new Bundle();
-        String phoneNumber = null;
-        String email = null;
+        String phoneNumber;
+        String email;
 
         Uri CONTENT_URI = ContactsContract.Contacts.CONTENT_URI;
         String _ID = ContactsContract.Contacts._ID;
@@ -31,16 +31,14 @@ public class DeviceContacts implements IDeviceContacts {
         String EmailCONTACT_ID = ContactsContract.CommonDataKinds.Email.CONTACT_ID;
         String DATA = ContactsContract.CommonDataKinds.Email.DATA;
 
-        StringBuffer output = new StringBuffer();
+        StringBuilder output = new StringBuilder();
 
         ContentResolver contentResolver = context.getContentResolver();
 
         Cursor cursor = contentResolver.query(CONTENT_URI, null, null, null, null);
 
-        //Log.i(TAG, "Number of Contacts read: " + cursor.getCount());
-
         // Loop for every contact in the phone
-        if (cursor.getCount() > 0) {
+        if (cursor != null && cursor.getCount() > 0) {
 
             while (cursor.moveToNext()) {
 
@@ -81,10 +79,12 @@ public class DeviceContacts implements IDeviceContacts {
                 output.append("\n");
             }
 
+            result.putInt("CONTACTS_COUNT", cursor.getCount());
+            result.putCharSequence("CONTACTS_DATA", output.toString());
 
+            cursor.close();
         }
-        result.putInt("CONTACTS_COUNT", cursor.getCount());
-        result.putCharSequence("CONTACTS_DATA", output.toString());
+
         return result;
     }
 

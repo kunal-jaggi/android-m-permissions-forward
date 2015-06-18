@@ -2,5 +2,6 @@
     <string name="app_name">MyContacts</string>
     <string name="btn_lbl_readContacts">Read Contacts</string>
     <string name="txt_lbl_contactsData">Available Contacts</string>
-    <string name="action_settings">Settings</string>
+     <string name="prg_title">Loading</string>
+    <string name="prg_msg">Wait while loading...</string>
 </resources>
