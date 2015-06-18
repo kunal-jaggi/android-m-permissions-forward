@@ -16,10 +16,10 @@ blog](http://android-developers.blogspot.co.uk/2015/06/more-material-design-with
 
 ### Screenshots
 
-<img src="screenshots/Screenshot1.png" width="25%" />
-<img src="screenshots/Screenshot2.png" width="25%" />
-<img src="screenshots/Screenshot3.png" width="25%" />
-<img src="screenshots/Screenshot4.png" width="25%" />
+<img src="screenshots/Screenshot1.png" width="40%" />
+<img src="screenshots/Screenshot2.png" width="40%" />
+<img src="screenshots/Screenshot3.png" width="40%" />
+<img src="screenshots/Screenshot4.png" width="40%" />
 
 ### Getting Started
 
