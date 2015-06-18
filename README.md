@@ -1,6 +1,6 @@
 # Android M Permissions and Forward Compatibility for Legacy Apps
 
-Android ‘M‘ Permissions and Forward Compatibility 
+An example app to demo the new runtime permission model introduced in Android M 
 
 ### Introduction
 
