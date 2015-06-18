@@ -4,15 +4,9 @@ An example app to demo the new runtime permission model introduced in Android M
 
 ### Introduction
 
-Material design is a new system for visual, interaction and motion design. We
-originally launched the [Topeka web app](https://github.com/Polymer/topeka)
-as an Open Source example of material design on the web.
-
-The Android version of Topeka demonstrates that the same branding and material
-design principles can be used to create a consistent experience across
-platforms. You can read more about it on the
-[Android Developers
-blog](http://android-developers.blogspot.co.uk/2015/06/more-material-design-with-topeka-for_16.html).
+MyContacts app will query the ContactsProvider component to retrieve all stored contacts. It needs READ_CONTACTS Permission. Although this app is designed for pre M devices, but we will install it on an M virtual device. On Android M, you can turn off the permissions from the settings screen. You will notice how Android M will return an empty data set with no contacts. You can read more about it on the
+[Android Advocate
+blog](https://android-advocate.blogspot.com/b/post-preview?token=zms-Bk4BAAA.NzPztJ5XnM_AZnQcHoqMLA.3gQ8DZTXGH-vzBalTp-n8w&postId=6821580290362654196&type=POST).
 
 ### Screenshots
 
