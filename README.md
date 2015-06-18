@@ -1,4 +1,4 @@
-# android-m-permissions-forward
+# Android M Permissions and Forward Compatibility for Legacy Apps
 
 Android ‘M‘ Permissions and Forward Compatibility 
 
