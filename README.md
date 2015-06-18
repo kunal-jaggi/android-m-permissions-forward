@@ -4,7 +4,7 @@ An example app to demo the new runtime permission model introduced in Android M
 
 ### Introduction
 
-MyContacts app will query the ContactsProvider component to retrieve all stored contacts. It needs READ_CONTACTS Permission. Although this app is designed for pre M devices, but we will install it on an M virtual device. On Android M, you can turn off the permissions from the settings screen. You will notice how Android M will return an empty data set with no contacts. You can read more about it on the
+MyContacts app will query the ContactsProvider component to retrieve all stored contacts. It needs READ_CONTACTS Permission. Although this app is designed for pre M devices, but we will install it on an Android M virtual device. On Android M, you can turn off app permissions from the settings screen (see screenshot 3). This will not cause our app to crash or throw SecurityException. You will notice how Android M will return an empty data set with no contacts (see screenshot 4). You can read more about it on the
 [Android Advocate
 blog](https://android-advocate.blogspot.com/b/post-preview?token=zms-Bk4BAAA.NzPztJ5XnM_AZnQcHoqMLA.3gQ8DZTXGH-vzBalTp-n8w&postId=6821580290362654196&type=POST).
 
@@ -27,7 +27,7 @@ installDebug - Installs the Debug build.
 ```
 
 ### Download Android M Developer Preview
-To test revoking app permissions at runtime, you will need Android M Developer preview SDK Manager. You can download preview SDK from the following link
+To test revoking app permissions at runtime, you will need Android M Developer preview SDK Manager. You can download the M preview SDK from the following link
 http://developer.android.com/preview/index.html      
 
 ### Support
