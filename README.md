@@ -30,20 +30,14 @@ Some important tasks are:
 ```
 assembleDebug - Assembles all Debug builds.
 installDebug - Installs the Debug build.
-connectedAndroidTest - Installs and runs the tests for Debug build on connected
-devices.
-test - Run all unit tests.
 ```
+
+### Download Android M Developer Preview
+To test revoking app permissions at runtime, you will need Android M Developer preview SDK Manager. You can download preview SDK from the following link
+http://developer.android.com/preview/index.html      
 
 ### Support
 
-- Google+ Community: https://plus.google.com/communities/105153134372062985968
-
-- Stack Overflow: http://stackoverflow.com/questions/tagged/android
-
 If you've found an error in this sample, please file an issue:
 
-https://github.com/googlesamples/android-topeka/issues
-
-Patches are encouraged, and may be submitted by forking this project and
-submitting a pull request through GitHub.
+https://github.com/kunal-jaggi/android-m-permissions-forward/issues
